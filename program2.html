@@ -1,0 +1,51 @@
+<html>
+<script >
+
+   
+
+	function check() {
+ 	var birth= document.getElementById("mydate").value;
+   var d = new Date(birth);
+   var n = d.getFullYear();
+   var d1=new Date();
+   var n1= d1.getFullYear();
+
+  var age =n1-n;
+  if(age>=18  && age<=45){
+    window.open("http://selfregistration.cowin.gov.in");
+
+  }
+  else {
+    document.getElementById("result").innerHTML= "you are not eligible";
+    console.log("you're not eligible");
+  }
+  
+ 
+   
+
+
+
+
+
+
+  }
+
+
+</script>
+<style>
+	input{
+		margin:2px;
+	}
+	</style>
+<head> 
+	<title> Program no.2</title>
+</head>
+<body>
+<input type="textarea" id="mydate" required />
+
+	<p id="result"></p>
+<button type="button" onclick="check()" >Result</button>
+
+</body>
+</html>
+

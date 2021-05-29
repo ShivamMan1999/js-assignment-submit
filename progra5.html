@@ -1,0 +1,38 @@
+<html>
+<script >
+
+  
+
+
+
+function reverse(){
+	var word=document.getElementById("demo").value;
+let reverseWord = word.split("").reverse().join("");
+if(reverseWord==word)	{
+ document.getElementById("result").innerHTML="String is pallindrome";
+ console.log("string is pallindrome");
+}
+
+else{
+ document.getElementById("result").innerHTML="String is not  pallindrome";
+ console.log("string is not pallindrome");
+}
+}
+reverse();
+
+
+</script>
+
+<head> 
+	<title> Program no.5</title>
+</head>
+<body>
+<label for="demo">Enter String</label>
+<input type="textarea" placeholder ="String" id="demo" ></input>
+<button type="button"  onclick="reverse()">Submit</button>
+
+
+  <p id="result"></p>
+</body>
+</html>
+
